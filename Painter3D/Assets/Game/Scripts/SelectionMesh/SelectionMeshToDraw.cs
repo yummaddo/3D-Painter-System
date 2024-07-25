@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game.Scripts
+namespace Game.SelectionMesh
 {
     [CreateAssetMenu(fileName = "MeshToDrawSettings", menuName = "MeshToDraw")]
     public class SelectionMeshToDraw : ScriptableObject

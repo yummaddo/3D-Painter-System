@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Game.Scripts
+namespace Game.SelectionMesh
 {
     public class SelectionMeshMenu : MonoBehaviour
     {

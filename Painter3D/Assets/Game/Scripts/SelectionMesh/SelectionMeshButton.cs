@@ -1,10 +1,8 @@
-﻿using System;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Game.Scripts
+namespace Game.SelectionMesh
 {
     public class SelectionMeshButton : MonoBehaviour
     {
