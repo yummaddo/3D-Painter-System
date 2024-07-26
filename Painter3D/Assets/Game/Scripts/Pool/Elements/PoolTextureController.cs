@@ -3,7 +3,7 @@ using PaintIn3D;
 using UnityEngine;
 using Zenject;
 
-namespace Game.Pool
+namespace Game.Pool.Elements
 {
     public class PoolTextureController : MonoBehaviour
     {

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 using CW.Common;
@@ -1112,10 +1113,15 @@ namespace PaintCore
 				{
 					Save();
 				}
-
-				CwCommon.ReleaseRenderTexture(current);
-				CwCommon.ReleaseRenderTexture(preview);
-
+				try
+				{
+					CwCommon.ReleaseRenderTexture(current);
+					CwCommon.ReleaseRenderTexture(preview);
+				}
+				catch (Exception e)
+				{
+					Debug.Log(e.Message);
+				}
 				ClearStates();
 			}
 

@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
-namespace Game
+namespace Game.Utility
 {
     public enum ContextDebug
     {

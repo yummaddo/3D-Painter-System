@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game
+namespace Game.Utility
 {
     [CreateAssetMenu(fileName = "MeshContainer", menuName = "MeshContainer")]
     public class MeshContainer : ScriptableObject

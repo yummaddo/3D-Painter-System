@@ -1,8 +1,8 @@
-﻿using Game.SelectionMesh;
-using Game.UI.MenuBrashSelector;
+﻿using Game.UI.MenuBrashSelector;
 using Game.UI.MenuColorSelector;
 using Game.UI.MenuLoadPaint;
 using Game.UI.MenuSavePaint;
+using Game.UI.MenuSelectionMesh;
 using UnityEngine;
 using Zenject;
 

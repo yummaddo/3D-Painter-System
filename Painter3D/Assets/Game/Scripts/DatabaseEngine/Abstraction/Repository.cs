@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using Game.DatabaseEngine.SaveData;
+using Game.Utility;
 using UnityEngine;
 
-namespace Game.DatabaseEngine
+namespace Game.DatabaseEngine.Abstraction
 {
     [System.Serializable]
-    public abstract class Repository<TSaveTableData> where TSaveTableData : new()
+    public abstract class Repository<TSaveTableData> 
+        where TSaveTableData : new()
     {
         public TSaveTableData data;
         private  string _saveFileName = "Table_Of_Saves.json";
@@ -18,7 +18,6 @@ namespace Game.DatabaseEngine
         }
 
         protected object PublicAesLock { get; set; }
-
         internal  void WriteDataToJson(TSaveTableData savedData) {
             string dataString = "";
             string jsonFilePath = DataPath();
@@ -33,7 +32,6 @@ namespace Game.DatabaseEngine
             dataString = File.ReadAllText(jsonFilePath);
             return dataString;
         }
-
         internal TSaveTableData GetDataFromJson(string json)
         {
             lock (PublicAesLock)
@@ -61,7 +59,6 @@ namespace Game.DatabaseEngine
 
         public abstract TSaveTableData GetVoidData();
         public abstract void Initialization();
-        
         internal void SaveResourceData()
         {
             try

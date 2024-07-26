@@ -1,6 +1,6 @@
-﻿using Game.SelectionMesh;
+﻿using Game.Pool.Elements;
 
-namespace Game
+namespace Game.Utility
 {
     [System.Serializable]
     public class MeshToDrawDictionary : UnitySerializedDictionary<string, MeshToDraw>

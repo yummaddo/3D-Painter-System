@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Game.Utility;
 using UnityEngine;
 
-namespace Game.Boot
+namespace Game
 {
     public class ApplicationGame : MonoBehaviour
     {

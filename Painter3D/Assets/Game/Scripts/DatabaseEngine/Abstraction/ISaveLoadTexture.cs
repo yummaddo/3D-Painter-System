@@ -1,7 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Game.DatabaseEngine
+namespace Game.DatabaseEngine.Abstraction
 {
     public interface ISaveLoadTexture
     {

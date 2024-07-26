@@ -33,7 +33,7 @@ namespace Game.UI.MenuLoadPaint
         private async UniTask CreateSaveElements()
         {
             await UniTask.Yield();
-            foreach (var saveDataElement in _dataBase.tableSave.GetMeshSaves().tableData)
+            foreach (var saveDataElement in _dataBase.SaveProvider.SaveGet().tableData)
             {
                 await CreateSaveElement(saveDataElement);
                 await UniTask.Yield(destroyCancellationToken);

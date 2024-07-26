@@ -1,12 +1,11 @@
-﻿using System;
-using System.Globalization;
+﻿using Game.Pool.Elements;
 using Game.UI.MenuBrashSelector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Game.Pool
+namespace Game.UI.MenuColorSelector
 {
     public class ColorSelectorBrashSelection : MonoBehaviour
     {

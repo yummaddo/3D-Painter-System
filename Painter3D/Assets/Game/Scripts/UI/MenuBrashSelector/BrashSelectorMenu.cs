@@ -2,6 +2,7 @@
 using Game.DatabaseEngine;
 using Game.DatabaseEngine.SaveData;
 using Game.Pool;
+using Game.Pool.Elements;
 using Game.UI.MenuColorSelector;
 using PaintIn3D;
 using UnityEngine;
@@ -30,12 +31,12 @@ namespace Game.UI.MenuBrashSelector
         private void Construct(DataBase dataBase)
         {
             _dataBase = dataBase;
-            _dataBase.tableSave.OnRepositoryInit += InjectDataSetting;
+            _dataBase.OnRepositoryInit += InjectDataSetting;
         }
 
         private void InjectDataSetting()
         {
-            _temp = _dataBase.tableSave.GetBrashSettingSaves();
+            _temp = _dataBase.BrashProvider.SaveGet();
             sphereBrash.Radius = _temp.dataBrash.size;
             sphereBrash.Hardness = _temp.dataBrash.hardness;
             sphereBrash.Opacity = _temp.dataBrash.opacity;
@@ -66,7 +67,7 @@ namespace Game.UI.MenuBrashSelector
                     break;
             }
 
-            _dataBase.tableSave.Save(_temp);
+            _dataBase.BrashProvider.SaveLoad(_temp);
         }
 
         public float GetValue(BrashSettingType type)
@@ -89,7 +90,7 @@ namespace Game.UI.MenuBrashSelector
             sphereBrash.Color = value;
             _temp.dataBrash.color = value;
             OnColorBrashChange?.Invoke(value);
-            _dataBase.tableSave.Save(_temp);
+            _dataBase.BrashProvider.SaveLoad(_temp);
         }
 
         private void ChangeOpacity(float value)
@@ -98,7 +99,7 @@ namespace Game.UI.MenuBrashSelector
             sphereBrash.Opacity = value;
             _temp.dataBrash.opacity = value;
             OnOpacityBrashChange?.Invoke(value);
-            _dataBase.tableSave.Save(_temp);
+            _dataBase.BrashProvider.SaveLoad(_temp);
         }
 
         private void ChangeHardness(float value)
@@ -107,7 +108,7 @@ namespace Game.UI.MenuBrashSelector
             sphereBrash.Hardness = value;
             _temp.dataBrash.hardness = value;
             OnHardnessBrashChange?.Invoke(value);
-            _dataBase.tableSave.Save(_temp);
+            _dataBase.BrashProvider.SaveLoad(_temp);
         }
 
         private void ChangeSize(float value)
@@ -116,7 +117,7 @@ namespace Game.UI.MenuBrashSelector
             sphereBrash.Radius = value;
             _temp.dataBrash.size = value;
             OnSizeBrashChange?.Invoke(value);
-            _dataBase.tableSave.Save(_temp);
+            _dataBase.BrashProvider.SaveLoad(_temp);
         }
     }
 }

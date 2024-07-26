@@ -1,4 +1,4 @@
-﻿namespace Game.Pool
+﻿namespace Game.Pool.Elements
 {
     public enum BrashSettingType
     {

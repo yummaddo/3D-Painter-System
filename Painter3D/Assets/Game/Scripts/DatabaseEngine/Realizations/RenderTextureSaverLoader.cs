@@ -1,8 +1,9 @@
 ﻿using System.IO;
 using Cysharp.Threading.Tasks;
+using Game.DatabaseEngine.Abstraction;
 using UnityEngine;
 
-namespace Game.DatabaseEngine
+namespace Game.DatabaseEngine.Realizations
 {
     public class RenderTextureSaverLoader : ISaveLoadTexture
     {

@@ -1,9 +1,9 @@
-﻿using Game.Pool;
+﻿using Game.Pool.Elements;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace Game.SelectionMesh
+namespace Game.UI.MenuSelectionMesh
 {
     public class SelectionMeshButton : MonoBehaviour
     {

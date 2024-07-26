@@ -18,7 +18,11 @@ MonoBehaviour:
     - giraf
     - Cube
     - Sphere
+    - Zombie
+    - SpaceShip
     valueData:
     - {fileID: 11400000, guid: 4789be57eba0a0845ad046087dd30759, type: 2}
     - {fileID: 11400000, guid: 70f49d4c177db0848b422949c57e5d2d, type: 2}
     - {fileID: 11400000, guid: 0a7f195ccf46f7044962bcefeaf8f479, type: 2}
+    - {fileID: 11400000, guid: cea2e275c029d2840bc71620e703a8d0, type: 2}
+    - {fileID: 11400000, guid: c06f1782593ebcc46acee435609d66c2, type: 2}

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.SelectionMesh
+namespace Game.UI.MenuSelectionMesh
 {
     public class SelectionMeshMenu : AbstractMenu
     {

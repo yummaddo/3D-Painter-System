@@ -3,6 +3,7 @@ using Game.DatabaseEngine;
 using Game.DatabaseEngine.SaveData;
 using Game.UI.MenuLoadPaint;
 using Game.UI.MenuSavePaint;
+using Game.Utility;
 using PaintCore;
 using UnityEngine;
 using Zenject;
@@ -56,7 +57,7 @@ namespace Game.Pool
             Debugger.Logger($"Try to create new Save={saveName} mesh={meshName} textureToSave[h={height},w={width}]", Process.Create);
             
             var save = new SaveDataElement(saveName, meshName,DataBase.DataPath(saveName+".bytes"), width, height);
-            _dataBase.tableSave.Save(save);
+            _dataBase.SaveProvider.SaveLoad(save);
             Debugger.Logger($"Table Save => SaveResourceData", Process.Info);
             
             _dataBase.LoadSaveTexture.SaveTextureToBytes(textureToSave,save.path);
