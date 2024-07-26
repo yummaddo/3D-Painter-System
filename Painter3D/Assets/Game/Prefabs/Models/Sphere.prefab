@@ -175,7 +175,7 @@ MonoBehaviour:
   coord: 1
   group:
     index: 0
-  undoRedo: 0
+  undoRedo: 2
   stateLimit: 0
   saveLoad: 0
   saveName: 
@@ -210,6 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7879344893461281879}
+  - component: {fileID: 8268544558077349305}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -233,3 +234,18 @@ Transform:
   - {fileID: 6297408136059163498}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8268544558077349305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3679472764080973638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e3d635f6514d219473d86d280c56d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshTexture: {fileID: 8810306313359139365}
+  mesh: {fileID: 8534236268046074084}
+  materialCloner: {fileID: 516258871924580494}

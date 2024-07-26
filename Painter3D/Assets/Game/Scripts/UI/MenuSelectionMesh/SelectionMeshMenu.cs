@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Game.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game.SelectionMesh
 {
-    public class SelectionMeshMenu : MonoBehaviour
+    public class SelectionMeshMenu : AbstractMenu
     {
         public event Action<SelectionMeshButton> OnButtonClickBySelection;
         public event Action<SelectionMeshButton> OnButtonSelectorRegister;
@@ -13,6 +15,7 @@ namespace Game.SelectionMesh
         internal void ButtonClickedBySelector(SelectionMeshButton selectionMeshButton)
         {
             OnButtonClickBySelection?.Invoke(selectionMeshButton);
+            Exit();
         }
         internal void ButtonSelectorRegistration(SelectionMeshButton selectionMeshButton)
         {
@@ -20,9 +23,10 @@ namespace Game.SelectionMesh
             OnButtonSelectorRegister?.Invoke(selectionMeshButton);
         }
 
-        private void Awake()
+        [field:SerializeField]public override Button ExitButton { get; set; }
+        protected override void Exit()
         {
-            
+            ExitButton.onClick.Invoke();
         }
     }
 }

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8810937153833413703}
+  - component: {fileID: 5136924433059134059}
   m_Layer: 0
   m_Name: Giraffe
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   - {fileID: 4298808273487496831}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5136924433059134059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5725751761646889662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e3d635f6514d219473d86d280c56d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshTexture: {fileID: 7449328894902334643}
+  mesh: {fileID: 192051524991794330}
+  materialCloner: {fileID: 6232590946558872194}
 --- !u!1 &6357461336380944005
 GameObject:
   m_ObjectHideFlags: 0
