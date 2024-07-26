@@ -8,7 +8,6 @@
     3D-Painter-System Game by Yummaddo
 </head>
 <body>
-    <h1>3D-Painter-System by Yummaddo</h1>
     <div class="badge">License: MIT</div>
     <div class="badge">Build Status: Successful</div>
     <div class="badge">Version: 1.0.0</div>
@@ -23,16 +22,24 @@
     </ul>
     <h2 id="examples">Examples</h2>
     <p>Gallery of screenshots showcasing the game's interface and features:</p>
-    <div class="comparison-container"style="max-width: 0.45; height: auto;">
-        <img src="doc/1.png" alt="no batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/2.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/3.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/4.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/5.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/6.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/7.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="doc/8.png" alt="batch" style="display: flex; justify-content: space-between; align-items: center;">
-    </div>
+    <table>
+        <tr>
+            <td><img src="doc/1.png" alt="no batch"></td>
+            <td><img src="doc/2.png" alt="batch"></td>
+        </tr>
+        <tr>
+            <td><img src="doc/3.png" alt="batch"></td>
+            <td><img src="doc/4.png" alt="batch"></td>
+        </tr>
+        <tr>
+            <td><img src="doc/5.png" alt="batch"></td>
+            <td><img src="doc/6.png" alt="batch"></td>
+        </tr>
+        <tr>
+            <td><img src="doc/7.png" alt="batch"></td>
+            <td><img src="doc/8.png" alt="batch"></td>
+        </tr>
+    </table>
     <h2 id="installation">Installation</h2>
     <h3>Steps to Install</h3>
     <pre>
